@@ -1,0 +1,13 @@
+output: polynomialtest.o Polynomial.o
+	g++ polynomialtest.o Polynomial.o -o polynomialtest
+	
+polynomialtest.o: polynomialtest.cpp
+	g++ -c polynomialtest.cpp 
+	
+Polynomial.o: Polynomial.cpp Polynomial.h
+	g++ -c Polynomial.cpp Polynomial.h
+	
+clean: 
+	rm *.o output
+	
+

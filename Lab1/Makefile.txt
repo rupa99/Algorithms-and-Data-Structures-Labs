@@ -1,0 +1,17 @@
+# List all the drivers
+all: playlisttest
+playlist.cpp 
+playlist.h 
+playlisttest.cpp
+ 
+
+
+playlisttest: playlisttest.cpp
+	g++ -std=c++11 -o  playlisttest playlisttest.cpp
+
+
+
+# List all the executables under 'all:'
+clean:
+	rm *.o playlisttest
+

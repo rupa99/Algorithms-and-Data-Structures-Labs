@@ -1,0 +1,73 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#include <sstream>
+#include <vector>
+// #include "unorderedhttest.h"
+// #include "openhttest.h"
+
+using namespace std;
+
+
+int main(){
+
+  string line= ""; 
+  string word = "";
+  // openhttest linear_prob_obj; 
+  // unorderedhttest chaining_obj; 
+  vector<string> output_openhttest, output_unorderedhttest; 
+
+
+  while (getline(cin, line)) {
+    stringstream singleline(line);
+   	getline(singleline, word, ' ');
+
+   	if(word == "n"){
+      cout<<"n"<<endl;
+   	  //ERROR: If size is not a valid number
+   		// singleline >> word; 
+   		// int hashtable_size = stoi(word);
+
+   		// output_openhttest.push_back(linear_prob_obj.initialize_size(hashtable_size)); 
+   		// output_unorderedhttest.push_back(chaining_obj.initialize_size(hashtable_size)); 
+
+   	}
+
+   	else if(word == "i"){
+      cout<<"i"<<endl;
+   		// singleline >> word; 
+     //  int key = stoi(word);
+
+     //  output_openhttest.push_back(linear_prob_obj.insert_key(key)); 
+     //  output_unorderedhttest.push_back(chaining_obj.insert_key(key)); 
+   	}
+
+   	else if(word == 's'){
+      cout<<"s"<<endl;
+   		// singleline >> word;
+     //  int key = stoi(word);
+
+     //  output_openhttest.push_back(linear_prob_obj.search_key(key)); 
+     //  output_unorderedhttest.push_back(chaining_obj.search_key(key)); 
+
+   	}
+
+   else if(word == "d"){
+   		// singleline >> word;
+     //  int key = stoi(word);
+
+     //  output_openhttest.push_back(linear_prob_obj.delete_key(key)); 
+     //  output_unorderedhttest.push_back(chaining_obj.delete_key(key));
+
+   	}
+
+  }
+
+  // cout <<"the output of the openhttest file is: "<<endl; 
+
+  // for (auto x: output_openhttest) {
+  //   cout << x<< endl;
+  // }
+
+return 0;
+
+}
